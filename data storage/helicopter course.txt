@@ -1,0 +1,4 @@
+I have taken a short course on conceptual helicopter design which was lectured by Prof.
+Arvind Sinha who is from Melbourne University. The course lasted 5 days and we made a conceptual design of a firefighting helicopter for bushfires in Thailand.
+The visiting professor taught us what are the most important things when we consider a conceptual design of a VTOL vehicle, how we should extract design requirements based on operation, mission, flight performance, and logistics.
+We learnt to draw mission profiles based on the terrain in which our helicopter would operate.

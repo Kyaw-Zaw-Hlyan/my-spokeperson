@@ -1,0 +1,241 @@
+/**
+ * Global Styles and CSS Resets
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/**
+ * Container
+ * Main wrapper element that centers the card on screen
+ */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/**
+ * Card
+ * Main content wrapper with white background and shadow
+ */
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/**
+ * Header Section
+ * Contains title and subtitle
+ */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/**
+ * Title
+ * Main heading of the application
+ */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/**
+ * Subtitle
+ * Secondary heading description
+ */
+.subtitle {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+/**
+ * Form Element
+ * Container for all form inputs
+ */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/**
+ * Form Group
+ * Wrapper for label and input pair
+ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/**
+ * Label
+ * Text label above input fields
+ */
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/**
+ * Input
+ * Text input field for subject
+ */
+.input {
+  padding: 12px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+/**
+ * Input Focus State
+ * Highlights input when user focuses on it
+ */
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/**
+ * Input Placeholder
+ * Styling for placeholder text
+ */
+.input::placeholder {
+  color: #bbb;
+}
+
+/**
+ * Textarea
+ * Large text area for content input
+ */
+.textarea {
+  padding: 12px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  line-height: 1.5;
+}
+
+/**
+ * Textarea Focus State
+ * Highlights textarea when user focuses on it
+ */
+.textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/**
+ * Textarea Placeholder
+ * Styling for placeholder text
+ */
+.textarea::placeholder {
+  color: #bbb;
+}
+
+/**
+ * Button
+ * Submit button with gradient background
+ */
+.button {
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/**
+ * Button Hover State
+ * Slight lift effect when hovering over button
+ */
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/**
+ * Button Active State
+ * Pressed appearance when clicking button
+ */
+.button:active {
+  transform: translateY(0);
+}
+
+/**
+ * Feedback Message
+ * Success or error message displayed after form submission
+ */
+.feedback {
+  margin-top: 20px;
+  padding: 14px 16px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-left: 4px solid #4caf50;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/**
+ * Responsive Design
+ * Adjusts layout for smaller screens
+ */
+@media (max-width: 600px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 12px 16px;
+  }
+}
