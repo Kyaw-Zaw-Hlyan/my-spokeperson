@@ -40,7 +40,7 @@ def count_words(text):
 def health():
     return {"status": "ok"}
 
-@app.post("/api/save")
+@app.post("/save")
 def save_content(request: ContentRequest):
     if not supabase:
         raise HTTPException(status_code=500, detail="Supabase not configured")
@@ -71,7 +71,7 @@ def save_content(request: ContentRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/read/{subject}")
+@app.get("/read/{subject}")
 def read_content(subject: str):
     if not supabase:
         raise HTTPException(status_code=500, detail="Supabase not configured")
