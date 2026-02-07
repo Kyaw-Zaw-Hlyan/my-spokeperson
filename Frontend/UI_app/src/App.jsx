@@ -71,7 +71,8 @@ function App() {
 
     try {
       // Send POST request to FastAPI backend
-      const response = await fetch('http://127.0.0.1:8000/api/save', {
+      const API_URL = process.env.REACT_APP_API_URL || 'https://my-spokeperson.vercel.app';
+      const response = await fetch(`${API_URL}/api/save`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
