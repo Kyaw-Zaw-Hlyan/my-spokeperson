@@ -72,6 +72,7 @@ function App() {
     try {
       // Send POST request to FastAPI backend
       const API_URL = process.env.REACT_APP_API_URL || 'https://my-spokeperson.vercel.app';
+      console.log('Calling API at:', API_URL);
       const response = await fetch(`${API_URL}/api/save`, {
         method: 'POST',
         headers: {
